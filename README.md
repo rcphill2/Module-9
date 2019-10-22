@@ -14,11 +14,12 @@ The output associated with the correct code for each exercise is shown at the bo
 
 Happy coding!  
 
-- Exercise 1a: [Complete 1-3](https://datacarpentry.org/semester-biology/exercises/Functions-use-and-modify-R/)
-- Exercise 1b: [Complete](https://datacarpentry.org/semester-biology/exercises/Functions-combining-functions-R/)
-- Exercise 1c: [Complete 1-2](https://datacarpentry.org/semester-biology/exercises/Functions-default-arguments-R/)
-- Exercise 1d: [Complete 1-3](https://datacarpentry.org/semester-biology/exercises/Loops-use-modify-loop-R/)
-- Exercise 1e: [Complete 1-4 and challenge questions](https://datacarpentry.org/semester-biology/exercises/Making-choices-size-estimates-by-name-R/)
+- Exercise 1: [Complete 1-7](https://datacarpentry.org/semester-biology/exercises/Making-choices-complete-the-code-R/)
+- Exercise 2: [Complete 1-2](https://datacarpentry.org/semester-biology/exercises/Loops-stringr-R/)
+- Exercise 3: [Complete 1-3](https://datacarpentry.org/semester-biology/exercises/Functions-use-and-modify-R/)
+- Exercise 4: [Complete (single exercise)](https://datacarpentry.org/semester-biology/exercises/Functions-combining-functions-R/)
+- Exercise 5: [Complete 1-3](https://datacarpentry.org/semester-biology/exercises/Loops-use-modify-loop-R/)
+- Exercise 6: [Complete 1-4; you do not need to complete the challenge questions](https://datacarpentry.org/semester-biology/exercises/Making-choices-size-estimates-by-name-R/)
 
 These exercises are directly from [Data Carpentry for Biologists](https://datacarpentry.org/semester-biology/) by Ethan White
 and Zachary Brym. Used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Material presented in this module is not endorsed by the licensors.
