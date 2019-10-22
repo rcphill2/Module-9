@@ -1,4 +1,4 @@
-# Module 10: Loops and Functions
+# Module 9: Loops and Functions
 
 **Part 1: Work through R4DS Chapter 19, Functions**
 - Required: [R4DS Chapter 19, Functions](https://r4ds.had.co.nz/functions.html)
