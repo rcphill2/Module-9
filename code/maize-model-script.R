@@ -27,7 +27,6 @@ a <- 0.00243
 LAIm <- 7
 
 # Initiatlize output vectors ----
-
 # Thermal time age of the crop on day t [deg.C/day]
 
 # Leaf area index (area of leaves per unit ground area) [m3/m3]
@@ -39,11 +38,18 @@ LAIm <- 7
 
 
 # Run for loop ----
-for ( in ) { 
+for (day in 1:(ndays - 1)) { # looping through day 1 to the second-to-last day
   # Calculate rates of change
-
-  # Update output variables
+  dTT <- max((weather$Tmin[day] + weather$Tmax[day])/2 - Tb, 0)
+  if(TT[day] <= TTM) {dB <- RUE * (1-exp(-K * LAI[day])) * weather$I[day]}
+  else {dB <- 0}
+  if (TT[day] <= TTL) {dLAI <- a * dTT * LAI[day] * max(LAIm - LAI[day], 0)}
+  else {dLAI <- 0}
   
+  # Update output variables
+  TT[day + 1] <- TT[day] + dTT
+  LAI[day + 1] <- LAI[day] + dLAI
+  B[day + 1] <- B[day] + dB
 }
 
 # Summarize model data
