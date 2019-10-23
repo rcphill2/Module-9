@@ -4,7 +4,8 @@
 - Required: [R4DS Chapter 19, Functions](https://r4ds.had.co.nz/functions.html)
 
 **Part 2: Watch the loops videos and follow along with the exercise**
-- Watch the video [here](https://youtu.be/).
+- [What are loops?](https://youtu.be/rpdFEHJkaNI)
+- [Constructing loops in R: maize model case study](https://youtu.be/5Zi38xgA-JY)
 
 **Part 3: Complete homework exercises**
 
