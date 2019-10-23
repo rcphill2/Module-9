@@ -16,7 +16,7 @@ The output associated with the correct code for each exercise is shown at the bo
 Happy coding!  
 
 - Exercise 1: [Complete 1-7](https://datacarpentry.org/semester-biology/exercises/Making-choices-complete-the-code-R/)
-- Exercise 2: [Complete 1-2](https://datacarpentry.org/semester-biology/exercises/Loops-stringr-R/)
+- Exercise 2: [Complete 1-2](https://datacarpentry.org/semester-biology/exercises/Loops-stringr-R/). The data file needed for this exercise, `sequences.csv`, is included in the `data` subdirectory of this repository.
 - Exercise 3: [Complete 1-3](https://datacarpentry.org/semester-biology/exercises/Functions-use-and-modify-R/)
 - Exercise 4: [Complete (single exercise)](https://datacarpentry.org/semester-biology/exercises/Functions-combining-functions-R/)
 - Exercise 5: [Complete 1-3](https://datacarpentry.org/semester-biology/exercises/Loops-use-modify-loop-R/)
