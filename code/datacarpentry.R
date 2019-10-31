@@ -2,10 +2,10 @@ library(tidyverse)
 
 #Exercise 1 ----
 #1
-lat1 <- 48.86
-lat2 <- 41.89
-long1 <- 2.35
-long2 <- 2.5
+lat1 <- 29.65
+lat2 <- 33.7
+long1 <- -82.33
+long2 <- -83.1
 
 
 # Check if two geographic points are near each other 
@@ -24,7 +24,7 @@ near(lat1,long1,lat2,long2)
 #3 - No
 #4 Yes
 #5
-lim <- 7
+lim <- 5
 # Check if two geographic points are near each other 
 nearlim <- function(lat1, long1, lat2, long2, lim){
   if ((abs(lat1 - lat2) < lim && (abs(long1 - long2) < lim))) {
@@ -109,7 +109,7 @@ for (j in 1:length(theropoda_lengths)) {
 
 a_values <- c(0.759, 0.751, 0.74, 0.746, 0.759, 0.751, 0.749, 0.751, 0.738, 0.768, 0.736, 0.749, 0.746, 0.744, 0.749, 0.751, 0.744, 0.754, 0.774, 0.751, 0.763, 0.749, 0.741, 0.754, 0.746, 0.755, 0.764, 0.758, 0.76, 0.748, 0.745, 0.756, 0.739, 0.733, 0.757, 0.747, 0.741, 0.752, 0.752, 0.748)
 
-b_values <- c(3.627, 3.633, 3.626, 3.633, 3.627, 3.629, 3.632, 3.628, 3.633, 3.627, 3.621, 3.63, 3.631, 3.632, 3.628, 3.626, 3.639, 3.626, 3.635, 3.629, 3.642, 3.632, 3.633, 3.629, 3.62, 3.619, 3.638, 3.627, 3.621, 3.628, 3.628, 3.635, 3.624, 3.621, 3.621, 3.632, 3.627, 3.624, 3.634, 3.621)
+b_values <- c(4.2, 3.633, 3.626, 3.633, 3.627, 3.629, 3.632, 3.628, 3.633, 3.627, 3.621, 3.63, 3.631, 3.632, 3.628, 3.626, 3.639, 3.626, 3.635, 3.629, 3.642, 3.632, 3.633, 3.629, 3.62, 3.619, 3.638, 3.627, 3.621, 3.628, 3.628, 3.635, 3.624, 3.621, 3.621, 3.632, 3.627, 3.624, 3.634, 3.621)
  masses_loop <- rep(NA, length(theropoda_lengths))
 mass_loop <- function(a, b, len) {
  
@@ -134,16 +134,16 @@ mass_loop(a_values, b_values, theropoda_lengths)
 
 
 # Exercise 6 ----
-length <- 10
-name <- "Stegosauria"
-get_mass_from_length_by_name <- function(length, name) { 
-  if (name == "Stegosauria") {a <- 10.95
+length <- 8
+name <- "Theropoda"
+get_mass_from_length_by_name <- function(length, name) {
+  if (name == "Stegosauria") {a <- 10.95 
   b <- 2.64}
-  else{ if (name == "Theropoda") {a <- 0.73
-  b <- 3.36}
-    else{ if (name == "Sauropoda") { a <- 214.44
-    b <- 1.46}
-      else{ a <- NA
+   else{ if (name == "Theropoda") {a <- 0.73 
+   b <- 3.63}
+      else{ if (name == "Sauropoda") { a <- 214.44 
+      b <- 1.46}
+      else{ a <- NA 
       b <- NA}}}
   mass <- a * length ^ b
   return(mass)
@@ -151,6 +151,16 @@ get_mass_from_length_by_name <- function(length, name) {
 get_mass_from_length_by_name(length, name)
 
 
+# get_mass_from_length_by_name <- function(length, name) { 
+#  if_else(name == "Stegosauria", a <- 10.95 
+#          b <- 2.64,
+#          if_else(name == "Theropoda", a <- 0.73 & b <- 3.36,
+#                  if_else(name == "Sauropoda", a <- 214.44 & b <- 1.46,
+#                          a <- NA & b <- NA)))
+#   mass <- a * length ^ b
+#   return(mass)
+# }
+# get_mass_from_length_by_name(length, name)
 
 
 

@@ -12,7 +12,7 @@ weather <- read_csv("data/weather.csv")
 
 # Define parameters (constant values) ----
 # Baseline temperature for growth [deg. C]
-Tb <- 7
+Tb <- 10
 # Temperature sum for crop maturity [deg.C/day]
 TTM <- 1200
 # Temperature sum at the end of leaf area increase [deg.C/day]
@@ -27,17 +27,22 @@ a <- 0.00243
 LAIm <- 7
 
 # Initiatlize output vectors ----
+ndays <- nrow(weather)
 # Thermal time age of the crop on day t [deg.C/day]
-
+TT <- rep(NA, ndays)
 # Leaf area index (area of leaves per unit ground area) [m3/m3]
-
+LAI <- rep(NA, ndays)
 # Biomass of crop per square meter of ground area [g/m2]
-
+B <- rep(NA, ndays)
 
 # Provide initial values for each output ----
-
+TT[1] <- 0
+LAI[1] <- 0.1
+B[1] <- 1
 
 # Run for loop ----
+
+
 for (day in 1:(ndays - 1)) { # looping through day 1 to the second-to-last day
   # Calculate rates of change
   dTT <- max((weather$Tmin[day] + weather$Tmax[day])/2 - Tb, 0)
